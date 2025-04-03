@@ -13,9 +13,11 @@
         android:theme="@style/Theme.KotlinBasicToAdvancedCourse"
         tools:targetApi="31">
         <activity
+            android:name=".States"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.KotlinBasicToAdvancedCourse">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
