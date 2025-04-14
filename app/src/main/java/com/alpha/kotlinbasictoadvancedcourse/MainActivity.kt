@@ -21,7 +21,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     // uncomment and run for each class
-
+                    
+                    //LoginScreen()
                     // SignUpScreen()
                     // UnitConverter()
 
