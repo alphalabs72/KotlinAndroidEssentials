@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.alpha.kotlinbasictoadvancedcourse.ui.theme.KotlinBasicToAdvancedCourseTheme
 
 class MainActivity : ComponentActivity() {
@@ -15,6 +16,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+
+            // below line for MVVM
+            val viewModel: CounterViewModel = viewModel()
+            // above line for MVVM
+
             KotlinBasicToAdvancedCourseTheme {
                 Surface( // 🛠️ Wrap UI inside Surface
                     modifier = Modifier.fillMaxSize(),
@@ -25,8 +31,9 @@ class MainActivity : ComponentActivity() {
                     //LoginScreen()
                     // SignUpScreen()
                     // UnitConverter()
+                    // Shopping()
 
-                     Shopping()
+                    TheCounterApp(viewModel = viewModel)
                 }
             }
         }
