@@ -1,4 +1,4 @@
-package com.alpha.kotlinbasictoadvancedcourse.login_sign_up
+package com.alpha.kotlinbasictoadvancedcourse.basic_ui_designs
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -80,7 +80,7 @@ fun LoginScreen() {
     ) {
         // App logo
         Image(
-            painter = painterResource(id = R.drawable.ic_launcher_foreground),
+            painter = painterResource(id = R.drawable.jetpack),
             contentDescription = "Logo",
             modifier = Modifier.size(64.dp)
         )
@@ -131,11 +131,11 @@ fun LoginScreen() {
             horizontalArrangement = Arrangement.Center,
             modifier = Modifier.fillMaxWidth()
         ) {
-            SocialLoginButton(icon = R.drawable.ic_launcher_foreground)
+            SocialLoginButton(icon = R.drawable.jetpack)
             Spacer(modifier = Modifier.width(16.dp))
-            SocialLoginButton(icon = R.drawable.ic_launcher_foreground)
+            SocialLoginButton(icon = R.drawable.jetpack)
             Spacer(modifier = Modifier.width(16.dp))
-            SocialLoginButton(icon = R.drawable.ic_launcher_foreground)
+            SocialLoginButton(icon = R.drawable.jetpack)
         }
 
         Spacer(modifier = Modifier.height(16.dp))

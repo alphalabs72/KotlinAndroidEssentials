@@ -9,8 +9,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.alpha.kotlinbasictoadvancedcourse.login_sign_up.LoginScreen
-import com.alpha.kotlinbasictoadvancedcourse.login_sign_up.SignUpScreen
+import com.alpha.kotlinbasictoadvancedcourse.basic_ui_designs.LazyColumnLists
+import com.alpha.kotlinbasictoadvancedcourse.basic_ui_designs.LoginScreen
+import com.alpha.kotlinbasictoadvancedcourse.basic_ui_designs.SignUpScreen
+import com.alpha.kotlinbasictoadvancedcourse.basic_ui_designs.SimpleUI
 import com.alpha.kotlinbasictoadvancedcourse.mvvm.CounterViewModel
 import com.alpha.kotlinbasictoadvancedcourse.mvvm.TheCounterApp
 import com.alpha.kotlinbasictoadvancedcourse.shopping.Shopping
@@ -34,6 +36,8 @@ class MainActivity : ComponentActivity() {
                 ) {
                     // uncomment and run for each class
 
+//                    SimpleUI()
+//                    LazyColumnLists()
 //                    LoginScreen()
 //                    SignUpScreen()
 //                    UnitConverter()
