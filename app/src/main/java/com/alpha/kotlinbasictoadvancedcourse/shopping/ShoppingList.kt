@@ -1,4 +1,4 @@
-package com.alpha.kotlinbasictoadvancedcourse
+package com.alpha.kotlinbasictoadvancedcourse.shopping
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -35,6 +35,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import com.alpha.kotlinbasictoadvancedcourse.R
 
 data class ShoppingItem(val id: Int,
                         var name: String,

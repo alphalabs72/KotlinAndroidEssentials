@@ -1,4 +1,4 @@
-package com.alpha.kotlinbasictoadvancedcourse
+package com.alpha.kotlinbasictoadvancedcourse.basics
 
 class BankAccount (var accountHolder: String, var balance: Double){
     private val transactionHistory = mutableListOf<String>()

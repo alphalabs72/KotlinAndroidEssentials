@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinBasicToAdvancedCourse"
         tools:targetApi="31">
+        <!--
+        note: change activity that u want to run
+        -->
         <activity
             android:name=".States"
             android:exported="false" />

@@ -1,4 +1,4 @@
-package com.alpha.kotlinbasictoadvancedcourse
+package com.alpha.kotlinbasictoadvancedcourse.basics
 
 fun main(){
     val myTrue : Boolean = true

@@ -1,4 +1,4 @@
-package com.alpha.kotlinbasictoadvancedcourse
+package com.alpha.kotlinbasictoadvancedcourse.basics
 
 class Dog (val name: String,val breed: String) {
     init {

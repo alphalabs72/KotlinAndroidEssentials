@@ -1,4 +1,4 @@
-package com.alpha.kotlinbasictoadvancedcourse
+package com.alpha.kotlinbasictoadvancedcourse.login_sign_up
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

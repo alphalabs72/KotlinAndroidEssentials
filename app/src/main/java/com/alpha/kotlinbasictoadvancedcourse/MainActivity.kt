@@ -9,7 +9,13 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.alpha.kotlinbasictoadvancedcourse.login_sign_up.LoginScreen
+import com.alpha.kotlinbasictoadvancedcourse.login_sign_up.SignUpScreen
+import com.alpha.kotlinbasictoadvancedcourse.mvvm.CounterViewModel
+import com.alpha.kotlinbasictoadvancedcourse.mvvm.TheCounterApp
+import com.alpha.kotlinbasictoadvancedcourse.shopping.Shopping
 import com.alpha.kotlinbasictoadvancedcourse.ui.theme.KotlinBasicToAdvancedCourseTheme
+import com.alpha.kotlinbasictoadvancedcourse.unit_converter.UnitConverter
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,11 +33,11 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     // uncomment and run for each class
-                    
-                    //LoginScreen()
-                    // SignUpScreen()
-                    // UnitConverter()
-                    // Shopping()
+
+//                    LoginScreen()
+//                    SignUpScreen()
+//                    UnitConverter()
+//                    Shopping()
 
                     TheCounterApp(viewModel = viewModel)
                 }

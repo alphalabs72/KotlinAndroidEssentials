@@ -1,4 +1,4 @@
-package com.alpha.kotlinbasictoadvancedcourse
+package com.alpha.kotlinbasictoadvancedcourse.mvvm
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf

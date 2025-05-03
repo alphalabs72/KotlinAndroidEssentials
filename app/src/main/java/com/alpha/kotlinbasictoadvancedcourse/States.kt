@@ -31,7 +31,7 @@ class States : ComponentActivity() {
         setContent {
             KotlinBasicToAdvancedCourseTheme {
                 Surface( // 🛠️ Wrap UI inside Surface
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier.Companion.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
                     CaptainGame()
@@ -46,51 +46,51 @@ class States : ComponentActivity() {
         val direction = remember { mutableStateOf("North") }
         val stormOrTreasure = remember { mutableStateOf("") }
 
-        Column (
-            modifier = Modifier.fillMaxSize(),
+        Column(
+            modifier = Modifier.Companion.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ){
+            horizontalAlignment = Alignment.Companion.CenterHorizontally
+        ) {
             Text(text = "Treasures Found: ${treasuresFound.intValue}")
             Text(text = "Current Direction: ${direction.value}")
             Text(text = stormOrTreasure.value)
-            Spacer(modifier = Modifier.height(10.dp))
+            Spacer(modifier = Modifier.Companion.height(10.dp))
             Button(onClick = {
                 direction.value = "East"
-                if (Random.nextBoolean()){
-                    treasuresFound.intValue +=1
+                if (Random.Default.nextBoolean()) {
+                    treasuresFound.intValue += 1
                     stormOrTreasure.value = "Found treasure"
-                }else stormOrTreasure.value = "Storm ahead!!"
+                } else stormOrTreasure.value = "Storm ahead!!"
             }) {
                 Text("Sail East")
             }
-            Spacer(modifier = Modifier.height(10.dp))
+            Spacer(modifier = Modifier.Companion.height(10.dp))
             Button(onClick = {
                 direction.value = "West"
-                if (Random.nextBoolean()){
-                    treasuresFound.intValue +=1
+                if (Random.Default.nextBoolean()) {
+                    treasuresFound.intValue += 1
                     stormOrTreasure.value = "Found treasure"
-                }else stormOrTreasure.value = "Storm ahead!!"
+                } else stormOrTreasure.value = "Storm ahead!!"
             }) {
                 Text("Sail West")
             }
-            Spacer(modifier = Modifier.height(10.dp))
+            Spacer(modifier = Modifier.Companion.height(10.dp))
             Button(onClick = {
                 direction.value = "South"
-                if (Random.nextBoolean()){
-                    treasuresFound.intValue +=1
+                if (Random.Default.nextBoolean()) {
+                    treasuresFound.intValue += 1
                     stormOrTreasure.value = "Found treasure"
-                }else stormOrTreasure.value = "Storm ahead!!"
+                } else stormOrTreasure.value = "Storm ahead!!"
             }) {
                 Text("Sail South")
             }
-            Spacer(modifier = Modifier.height(10.dp))
+            Spacer(modifier = Modifier.Companion.height(10.dp))
             Button(onClick = {
                 direction.value = "North"
-                if (Random.nextBoolean()){
-                    treasuresFound.intValue +=1
+                if (Random.Default.nextBoolean()) {
+                    treasuresFound.intValue += 1
                     stormOrTreasure.value = "Found treasure"
-                }else stormOrTreasure.value = "Storm ahead!!"
+                } else stormOrTreasure.value = "Storm ahead!!"
             }) {
                 Text("Sail North")
             }
