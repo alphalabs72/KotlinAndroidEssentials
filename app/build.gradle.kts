@@ -62,6 +62,13 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     implementation(libs.androidx.foundation)
+    // Compose ViewModel
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    // Network calls
+    implementation(libs.retrofit)
+    // Json to Kotlin Object mapping
+    implementation(libs.converter.gson)
+    // Image loading
+    implementation(libs.coil.compose)
 
 }
