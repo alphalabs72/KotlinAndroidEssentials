@@ -15,6 +15,7 @@ import com.alpha.kotlinbasictoadvancedcourse.basic_ui_designs.SignUpScreen
 import com.alpha.kotlinbasictoadvancedcourse.basic_ui_designs.SimpleUI
 import com.alpha.kotlinbasictoadvancedcourse.mvvm.CounterViewModel
 import com.alpha.kotlinbasictoadvancedcourse.mvvm.TheCounterApp
+import com.alpha.kotlinbasictoadvancedcourse.retrofit.RecipeApp
 import com.alpha.kotlinbasictoadvancedcourse.shopping.Shopping
 import com.alpha.kotlinbasictoadvancedcourse.ui.theme.KotlinBasicToAdvancedCourseTheme
 import com.alpha.kotlinbasictoadvancedcourse.unit_converter.UnitConverter
@@ -42,8 +43,9 @@ class MainActivity : ComponentActivity() {
 //                    SignUpScreen()
 //                    UnitConverter()
 //                    Shopping()
+//                    TheCounterApp(viewModel = viewModel)
 
-                    TheCounterApp(viewModel = viewModel)
+                    RecipeApp()
                 }
             }
         }
