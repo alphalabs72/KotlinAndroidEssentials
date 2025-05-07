@@ -13,5 +13,3 @@ This repository contains the full source code and practice projects on Kotlin fo
 
 ---
 
-Feel free to explore, fork, and use it as a learning reference!
-
