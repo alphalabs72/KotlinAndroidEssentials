@@ -71,4 +71,7 @@ dependencies {
     // Image loading
     implementation(libs.coil.compose)
 
+    // Jetpack Compose integration
+    implementation(libs.androidx.navigation.compose)
+
 }

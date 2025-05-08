@@ -1,4 +1,4 @@
-package com.alpha.kotlinbasictoadvancedcourse
+package com.alpha.kotlinbasictoadvancedcourse.activities
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
