@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun SecondScreen(navigationToFirstScreen:()-> Unit){
+fun SecondScreen(name: String,navigationToFirstScreen:()-> Unit){
 
     Column (
         modifier = Modifier
@@ -24,6 +24,8 @@ fun SecondScreen(navigationToFirstScreen:()-> Unit){
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         Text("This is second screen",
+            fontSize = 24.sp)
+        Text("Welcome $name",
             fontSize = 24.sp)
         Button(onClick = {
             navigationToFirstScreen()
@@ -36,6 +38,6 @@ fun SecondScreen(navigationToFirstScreen:()-> Unit){
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun SecondScreenPreview(){
-    SecondScreen({})
+    SecondScreen("Drake",{})
 }
 

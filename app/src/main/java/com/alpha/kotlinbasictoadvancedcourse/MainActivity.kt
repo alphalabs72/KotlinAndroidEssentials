@@ -9,6 +9,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.compose.rememberNavController
 import com.alpha.kotlinbasictoadvancedcourse.basic_ui_designs.LazyColumnLists
 import com.alpha.kotlinbasictoadvancedcourse.basic_ui_designs.LoginScreen
 import com.alpha.kotlinbasictoadvancedcourse.basic_ui_designs.SignUpScreen
@@ -16,6 +17,8 @@ import com.alpha.kotlinbasictoadvancedcourse.basic_ui_designs.SimpleUI
 import com.alpha.kotlinbasictoadvancedcourse.mvvm.CounterViewModel
 import com.alpha.kotlinbasictoadvancedcourse.mvvm.TheCounterApp
 import com.alpha.kotlinbasictoadvancedcourse.retrofit.RecipeApp
+import com.alpha.kotlinbasictoadvancedcourse.retrofit.RecipeScreen
+import com.alpha.kotlinbasictoadvancedcourse.retrofit.Screen
 import com.alpha.kotlinbasictoadvancedcourse.shopping.Shopping
 import com.alpha.kotlinbasictoadvancedcourse.ui.theme.KotlinBasicToAdvancedCourseTheme
 import com.alpha.kotlinbasictoadvancedcourse.unit_converter.UnitConverter
@@ -28,7 +31,9 @@ class MainActivity : ComponentActivity() {
 
             // below line for MVVM
             val viewModel: CounterViewModel = viewModel()
-            // above line for MVVM
+
+            //below line for RecipeApp
+            val navController = rememberNavController()
 
             KotlinBasicToAdvancedCourseTheme {
                 Surface( // 🛠️ Wrap UI inside Surface
@@ -45,7 +50,7 @@ class MainActivity : ComponentActivity() {
 //                    Shopping()
 //                    TheCounterApp(viewModel = viewModel)
 
-                    RecipeApp()
+                    RecipeApp(navController = navController)
                 }
             }
         }
